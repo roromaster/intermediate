@@ -33,3 +33,7 @@ zimme:active-route
 gwendall:auth-client-callbacks
 meteortoys:allthings
 datariot:ganalytics
+meteorhacks:kadira
+kadira:debug
+okgrow:analytics
+useraccounts:bootstrap
