@@ -1,7 +1,7 @@
 
 
 Template.Recipe.onCreated(function(){
-  this.editMode =   this.showExtraFields = new ReactiveVar( false );
+  this.editMode = new ReactiveVar( false );
 });
 
 

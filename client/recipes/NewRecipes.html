@@ -1,5 +1,10 @@
 <template name="NewRecipe">
+  {{#if addForm}}
   <div class="new-recipe-container">
     {{> quickForm collection="Recipes" id="insertRecipeForm" type="insert" class="new-recipe-form"}}
+    <button class="btn-deny">Cancel</button>
   </div>
+  {{else}}
+    <button class="new-recipe">Add Recipe</button>
+  {{/if}}
 </template>

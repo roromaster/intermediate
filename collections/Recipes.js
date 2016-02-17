@@ -19,7 +19,7 @@ Ingredient = new SimpleSchema({
   amount: {
     type: String
   }
-})
+});
 
 
 RecipeSchema = new SimpleSchema({
