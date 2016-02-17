@@ -6,5 +6,8 @@
     "analyticsSettings": {
       "Google Analytics" : {"trackingId": "UA-73702301-1"}
     }
+  },
+  "private": {
+
   }
 }
