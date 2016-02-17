@@ -3,12 +3,15 @@
     <h3>{{name}}</h3>
     <i class="fa fa-trash"></i>
     <i class="fa fa-pencil"></i>
+    {{#if editMode}}
+      {{> quickForm id="UpdateRecipe" collection="Recipes" type="update" doc=this class="update-recipe-form"}}
+    {{else}}
     <p>{{desc}}</p>
     <p>
       {{#each ingredients}}
       <span class="ingredient">{{name}} - {{amount}}</span> {{/each}}
     </p>
-    <a href="/recipe/{{_id}}">View Details</a>
+    <a href="/recipe/{{_id}}">View Details</a> {{/if}}
     <button class="btn-primary toggle-menu">Add to Menu</button>
     <button class="btn-deny toggle-menu">Remove From Menu</button>
   </article>
